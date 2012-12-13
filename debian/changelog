@@ -1,4 +1,10 @@
-glite-yaim-argus-server (1.5.2-1) unstable; urgency=low
+yaim-argus-server (1.6.0-1) unstable; urgency=low
+
+  * Upstream version 1.6.0 for EMI-3.
+
+ -- Valery Tschopp <valery.tschopp@switch.ch>  Thu, 13 Dec 2012 18:08:23 +0100
+
+yaim-argus-server (1.5.2-1) unstable; urgency=low
 
   * Initial release for Debian (Closes: #23482)
 

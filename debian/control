@@ -1,4 +1,4 @@
-Source: glite-yaim-argus-server
+Source: yaim-argus-server
 Priority: extra
 Maintainer: Valery Tschopp <valery.tschopp@switch.ch>
 Build-Depends: debhelper (>= 7.0.50~)

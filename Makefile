@@ -18,7 +18,7 @@
 # Debian packaging
 #
 name = yaim-argus-server
-version = 2.3.0
+version = 1.6.0
 release = 1
 
 dist_url = http://argus-authz.github.com/$(name)/distrib/$(name)-$(version).tar.gz
