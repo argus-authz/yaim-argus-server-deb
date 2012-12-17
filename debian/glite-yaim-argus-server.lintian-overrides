@@ -1,0 +1,2 @@
+# yaim is installed in /opt/glite/yaim
+glite-yaim-argus-server: dir-or-file-in-opt 
