@@ -1,7 +1,7 @@
 yaim-argus-server-deb
 =====================
 
-Debian packaging for Argus YAIM
+Debian packaging for Argus YAIM https://github.com/argus-authz/yaim-argus-server
 
 Source: `yaim-argus-server`
 
