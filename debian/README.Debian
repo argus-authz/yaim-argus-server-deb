@@ -1,0 +1,7 @@
+glite-yaim-argus-server for Debian
+----------------------------------
+
+BDII info provider is not (yet) available for Debian. YAIM is patched to not
+configure BDII, and not generate the Argus service GLUE2 info provider.
+
+ -- Valery Tschopp <valery.tschopp@switch.ch> Thui, Feb 7 2013 10:37:02 +0100

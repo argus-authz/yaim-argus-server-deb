@@ -1,0 +1,27 @@
+Description: remove BDII and GLUE2 info prodiver config
+ On Debian6 BDII info provider is not (yet) available. YAIM
+ will not configure BDII or generate GLUE2 info provider.
+Author: Valery Tschopp <valery.tschopp@switch.ch>
+
+Index: yaim-argus-server-1.6.0/src/node-info.d/glite-argus_server
+===================================================================
+--- yaim-argus-server-1.6.0.orig/src/node-info.d/glite-argus_server	2013-02-07 10:28:20.000000000 +0100
++++ yaim-argus-server-1.6.0/src/node-info.d/glite-argus_server	2013-02-07 10:29:47.000000000 +0100
+@@ -24,7 +24,9 @@
+ # AUTHORS :     Maria.Alandes.Pradillo@cern.ch
+ #               valery.tschopp@switch.ch
+ #
+-# NOTES : 
++# NOTES :       On Debian, BDII info provider is not (yet) available.
++#               BDII is not configured, and the GLUE2 info provider not
++#               created.
+ #
+ # YAIM MODULE:  yaim-argus_server
+ #
+@@ -38,6 +40,4 @@
+ config_pap_service
+ config_pdp_service
+ config_pep_service
+-config_info_glue2_service_argus
+-config_bdii_5.2
+ "

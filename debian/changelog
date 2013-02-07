@@ -1,6 +1,7 @@
 yaim-argus-server (1.6.0-1) unstable; urgency=low
 
   * Upstream version 1.6.0 for EMI-3.
+  * BDII info service not available (yet) on Debian.
 
  -- Valery Tschopp <valery.tschopp@switch.ch>  Thu, 13 Dec 2012 18:08:23 +0100
 
