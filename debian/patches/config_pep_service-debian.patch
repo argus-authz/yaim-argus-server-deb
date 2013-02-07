@@ -1,0 +1,16 @@
+Description: replace chkconfig with update-rc.d
+Author: Valery Tschopp <valery.tschopp@switch.ch>
+
+Index: yaim-argus-server-1.6.0/src/functions/config_pep_service
+===================================================================
+--- yaim-argus-server-1.6.0.orig/src/functions/config_pep_service	2013-02-07 12:46:59.000000000 +0100
++++ yaim-argus-server-1.6.0/src/functions/config_pep_service	2013-02-07 12:48:00.000000000 +0100
+@@ -159,7 +159,7 @@
+   chmod -R o=-rwx ${PEP_HOME}/logs
+ 
+   ####@ Add the script to the service list
+-  /sbin/chkconfig --add argus-pepd
++  update-rc.d argus-pepd defaults
+ 
+ 
+   ####@ Start the PEP service

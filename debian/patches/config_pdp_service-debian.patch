@@ -1,0 +1,16 @@
+Description: replace chkconfig with update-rc.d
+Author: Valery Tschopp <valery.tschopp@switch.ch>
+
+Index: yaim-argus-server-1.6.0/src/functions/config_pdp_service
+===================================================================
+--- yaim-argus-server-1.6.0.orig/src/functions/config_pdp_service	2013-02-07 12:45:29.000000000 +0100
++++ yaim-argus-server-1.6.0/src/functions/config_pdp_service	2013-02-07 12:46:26.000000000 +0100
+@@ -113,7 +113,7 @@
+ 
+   ####@ Add the script to the service list
+   yaimlog INFO "Register /etc/init.d/argus-pdp..."
+-  /sbin/chkconfig --add argus-pdp
++  update-rc.d argus-pdp defaults
+ 
+   ####@ Start the PDP service
+   yaimlog INFO "Starting Argus PDP service..."

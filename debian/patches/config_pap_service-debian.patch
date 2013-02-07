@@ -1,0 +1,23 @@
+Description: replace chkconfig with update-rc.d and /etc/rc.d doesn't exist.
+Author: Valery Tschopp <valery.tschopp@switch.ch>
+
+Index: yaim-argus-server-1.6.0/src/functions/config_pap_service
+===================================================================
+--- yaim-argus-server-1.6.0.orig/src/functions/config_pap_service	2013-02-07 12:41:31.000000000 +0100
++++ yaim-argus-server-1.6.0/src/functions/config_pap_service	2013-02-07 12:44:28.000000000 +0100
+@@ -190,13 +190,13 @@
+ 
+ 
+   ####@ Add the script to the service list    
+-  /sbin/chkconfig --add argus-pap
++  update-rc.d argus-pap defaults
+ 
+   ####@ Start the PAP service
+   yaimlog INFO "Starting Argus PAP service..."
+ 
+   # PAP_HOME needs to exist in the environment to be able to start the service
+-  PAP_HOME=${PAP_HOME} /etc/rc.d/init.d/argus-pap start
++  PAP_HOME=${PAP_HOME} /etc/init.d/argus-pap start
+ 
+   if [ $? -eq 1 ]; then
+     yaimlog ERROR "Error starting Argus PAP service"

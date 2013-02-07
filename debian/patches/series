@@ -1,1 +1,4 @@
-bdii-not-available.patch
+config_pap_service-debian.patch
+config_pdp_service-debian.patch
+config_pep_service-debian.patch
+glite-argus_server-debian.patch
